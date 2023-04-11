@@ -1,0 +1,102 @@
+body {
+    background-color: #09633e;
+    background-image: url("../src/images/dino2.jpeg");
+    background-repeat: repeat;
+    
+    background-position: center;
+}
+
+h1,h2,h3 {
+    font-family: 'Monoton', cursive; ;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    font-size: clam(17px, 4vw, 23px);
+    font-family: 'Space Mono', monospace;
+    color: white;
+}
+
+h1,h2,h3 {
+    font-weight: 800;
+}
+
+h1 {
+    font-size: clamp(60px, 4vw, 80px)
+}
+
+a {
+    color: rgb(205, 76, 104);
+}
+
+
+a:hover {
+    color: rgb(243, 169, 89)
+}
+
+h2 {
+    font-size: 40px;
+}
+
+main, section,footer {
+    width: 90%;
+    margin: 0 auto;
+    margin-right: 15px;
+}
+
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+section.container figure {
+margin: 0;
+padding: 0;
+}
+
+section.container div {
+    width: 50%;
+}
+
+
+section.container figure img {
+    width: 300px;
+    width: 100%;
+transition: transform 0.4s ease-in-out;
+
+}
+
+
+section.container figure img:hover{
+    transform: scale(1.3);
+    filter: drop-shadow(10px 10px rgba(206, 63, 231, 0.208));
+    
+}
+
+@media (max-width: 768px){
+    section.container {
+    flex-direction: column;
+
+    }
+
+    section .container div {
+        width: 100%;
+        margin-bottom: 130px;
+    }
+
+    senction.container figure img:hover{
+        transform: scale(1)
+    }
+}
+
+section.container figure summary {
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
